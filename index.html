@@ -1,172 +1,613 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PeterPan - Thinkerbell</title>
+    <title>Thinkerbell | Voice Notes, Summaries, Translation</title>
+    <meta name="description"
+        content="Thinkerbell helps you transcribe, summarize, and translate WhatsApp messages with transparent pricing and GDPR-conscious operations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a href="#">Thinkerbell</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#key-features">Key Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#try-now">Try now</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pricing">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-us">About us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">Thinkerbell</h1>
-            <p class="lead fw-normal">A WhatsApp bot designed to enhance your vocal messaging experience</p>
-            <a class="btn btn-outline-secondary" href="#try-now">Try now</a>
-        </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
-        <div class="container px-4">
-            <span class="intern-nav" id="key-features"></span>
-            <h2 class="pb-2 border-bottom text-center">Key Features</h2>
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 py-5">
-                <div class="col d-flex align-items-start flex-column">
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><i class="bi bi-pencil-square"></i> Voice Note
-                        Transcription</h3>
-                    <p>Convert your voice messages into clear, readable text.</p>
-                    <p class="mt-auto">0.01€ per minute.</p>
-                </div>
-                <div class="col d-flex align-items-start flex-column">
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><i class="bi bi-file-text"></i> Message
-                        Summarization</h3>
-                    <p>Get the gist of long conversations with concise summaries.</p>
-                    <p class="mt-auto">0.01€ per 1000 tokens</p>
-                </div>
-                <div class="col d-flex align-items-start flex-column">
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><i class="bi bi-translate"></i> Translation
-                    </h3>
-                    <p>Bridge language gaps by translating messages between multiple languages.</p>
-                    <p>0.01€ of usage</p>
-                </div>
+    <nav class="navbar navbar-expand-lg fixed-top app-nav">
+        <div class="container">
+            <a class="brand-link" href="#top">
+                <span>Thinkerbell</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#key-features">Key Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transparency">Transparency</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a id="nav-try" class="btn btn-sm btn-outline-primary nav-cta" href="#try-now">Try now</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <div class="lang-switch" data-lang-switch-main>
+                            <button type="button" data-lang="en" class="is-active">EN</button>
+                            <button type="button" data-lang="de">DE</button>
+                            <button type="button" data-lang="es">ES</button>
+                            <button type="button" data-lang="fr">FR</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="container px-4">
-            <span class="intern-nav" id="try-now"></span>
-            <h2 id="free-trial" class="pb-2 border-bottom">Try Now</h2>
-            <div class="py-5">
-                <p>Test it out and get 5 credits for free:</p>
-                <p>Send a voice or text message to this <a href="https://wa.me/4915734815116">contact</a>!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-        <div class="container px-4">
-            <span class="intern-nav" id="pricing"></span>
-            <h2 class="pb-2 border-bottom">Pricing</h2>
-            <div class="pt-5">
-                <p>1 credit corresponds to 0.01€ of usage.</p>
-                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm">
-                            <div class="card-header py-3">
-                                <h4 class="my-0 fw-normal">10 credits</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title">0.50€</h1>
-                                <a type="button" href="https://buy.stripe.com/cN2bKg32ZbAkacM7st"
-                                   class="w-100 btn btn-lg btn-outline-primary">Buy now</a>
-                            </div>
+    <main id="top">
+        <section class="hero-wrap position-relative overflow-hidden">
+            <div class="hero-noise"></div>
+            <div class="container px-4 py-5">
+                <div class="row align-items-center g-5 hero-grid">
+                    <div class="col-lg-7">
+                        <p id="hero-eyebrow" class="eyebrow">A product by peterpan-communications</p>
+                        <h1 id="hero-title" class="display-4 hero-title">Your WhatsApp messages, finally usable.</h1>
+                        <p id="hero-subtitle" class="lead hero-subtitle">Thinkerbell turns voice notes into text, summarizes long chats,
+                            and translates between languages. Built for speed, clarity, and transparent pricing.</p>
+                        <div class="d-flex flex-wrap gap-3 pt-2">
+                            <a id="btn-start" class="btn btn-primary btn-lg" href="#try-now">Start free</a>
+                            <a id="btn-transparency" class="btn btn-outline-primary btn-lg" href="#transparency">See cost transparency</a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm">
-                            <div class="card-header py-3">
-                                <h4 class="my-0 fw-normal">30 credits</h4>
+                    <div class="col-lg-5">
+                        <div class="hero-card p-4">
+                            <div class="hero-logo-wrap">
+                                <img src="favicon/1-thinkerbell_app_logo.jpg" alt="Thinkerbell app logo" class="hero-logo">
                             </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title">0.99€</h1>
-                                <a type="button" href="https://buy.stripe.com/cN2eWsbzv1ZK70AcMM"
-                                   class="w-100 btn btn-lg btn-outline-primary">Buy now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm">
-                            <div class="card-header py-3">
-                                <h4 class="my-0 fw-normal">100 credits</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title">2.79€</h1>
-                                <a type="button" href="https://buy.stripe.com/cN26pW9rnawggBafZ0"
-                                   class="w-100 btn btn-lg btn-outline-primary">Buy now</a>
-                            </div>
+                            <p id="hero-kicker" class="hero-card-kicker">What you get</p>
+                            <ul class="list-unstyled m-0">
+                                <li><i class="bi bi-check-circle-fill"></i><span id="hero-li-1">Fast voice transcription</span></li>
+                                <li><i class="bi bi-check-circle-fill"></i><span id="hero-li-2">Concise summaries</span></li>
+                                <li><i class="bi bi-check-circle-fill"></i><span id="hero-li-3">Multilingual translation</span></li>
+                                <li><i class="bi bi-check-circle-fill"></i><span id="hero-li-4">Credit-based micro pricing</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
+        <section class="section-shell position-relative overflow-hidden p-3 p-md-5 m-md-3">
+            <div class="container px-4 py-2">
+                <span class="intern-nav" id="key-features"></span>
+                <h2 id="features-title" class="pb-2 border-bottom text-center">Key Features</h2>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
-        <div class="container px-4">
-            <span class="intern-nav" id="about-us"></span>
-            <h2 id="free-trial" class="pb-2 border-bottom text-center">About us</h2>
-            <div class="pt-5">
-                <p>Welcome to our quirky little corner of the web! Here at Peter Pan Communications</p>
-                <p>we believe in sprinkling a little bit of magic into every project we touch. For over 25 years, we've
-                    been the wizards behind the curtain, turning mundane messages into captivating communication
-                    spells!</p>
-                We're not just a team, we're a family of creative misfits who believe that advertising isn't just about
-                selling products—it's about telling tales that tug at heartstrings, tickle funny bones, and maybe, just
-                maybe, change the world a little bit
-                From alphabet antics to zesty campaigns, we've done it all. Our secret? A pinch of passion, a dash of
-                daring, and a liberal sprinkling of creativity. Oh, and coffee. Lots of coffee.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+                    <div class="col d-flex align-items-start flex-column feature-card">
+                        <h3 id="feature-1-title" class="fw-bold mb-0 fs-4 text-body-emphasis"><i class="bi bi-pencil-square"></i> Voice Note
+                            Transcription</h3>
+                        <p id="feature-1-text">Convert your voice messages into clear, readable text.</p>
+                        <p id="feature-1-price" class="mt-auto price-hint">0.01 EUR per minute</p>
+                    </div>
+                    <div class="col d-flex align-items-start flex-column feature-card">
+                        <h3 id="feature-2-title" class="fw-bold mb-0 fs-4 text-body-emphasis"><i class="bi bi-file-text"></i> Message
+                            Summarization</h3>
+                        <p id="feature-2-text">Get the gist of long conversations with concise summaries.</p>
+                        <p id="feature-2-price" class="mt-auto price-hint">0.01 EUR per 1000 tokens</p>
+                    </div>
+                    <div class="col d-flex align-items-start flex-column feature-card">
+                        <h3 id="feature-3-title" class="fw-bold mb-0 fs-4 text-body-emphasis"><i class="bi bi-translate"></i> Translation
+                        </h3>
+                        <p id="feature-3-text">Bridge language gaps by translating messages between multiple languages.</p>
+                        <p id="feature-3-price" class="price-hint">0.01 EUR per credit worth of usage</p>
+                    </div>
+                </div>
             </div>
-            <div class="pt-1">
-                <h3 id="free-trial" class="pb-2">Come to visit us</h3>
-                <p>Peter Stampf <br>
-                    Prinz Eugen Straße 20c/8<br/>
-                    7400 Oberwart<br/>
-                    Austria</p>
+        </section>
+
+        <section class="section-shell section-alt position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+            <div class="container px-4 py-2">
+                <span class="intern-nav" id="try-now"></span>
+                <h2 id="try-title" class="pb-2 border-bottom">Try Now</h2>
+                <div class="py-5">
+                    <p id="try-text-1">Test it out and get 5 credits for free:</p>
+                    <p id="try-text-2">Send a voice or text message to this <a href="https://wa.me/4915734815116">contact</a>!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+            <div class="container px-4 py-2">
+                <span class="intern-nav" id="pricing"></span>
+                <h2 id="pricing-title" class="pb-2 border-bottom">Pricing</h2>
+                <div class="pt-5">
+                    <p id="pricing-subtitle">1 credit corresponds to 0.01 EUR of usage.</p>
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm pricing-card">
+                                <div class="card-header py-3">
+                                    <h4 id="plan-1-title" class="my-0 fw-normal">10 credits</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">0.50 EUR</h1>
+                                    <a type="button" href="https://buy.stripe.com/cN2bKg32ZbAkacM7st"
+                                        class="w-100 btn btn-lg btn-outline-primary" id="buy-1">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm pricing-card pricing-highlight">
+                                <div class="card-header py-3">
+                                    <h4 id="plan-2-title" class="my-0 fw-normal">30 credits <span id="plan-popular" class="recommended-pill">Most
+                                            popular</span></h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">0.99 EUR</h1>
+                                    <a type="button" href="https://buy.stripe.com/cN2eWsbzv1ZK70AcMM"
+                                        class="w-100 btn btn-lg btn-primary" id="buy-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm pricing-card">
+                                <div class="card-header py-3">
+                                    <h4 id="plan-3-title" class="my-0 fw-normal">100 credits</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">2.79 EUR</h1>
+                                    <a type="button" href="https://buy.stripe.com/cN26pW9rnawggBafZ0"
+                                        class="w-100 btn btn-lg btn-outline-primary" id="buy-3">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell section-alt position-relative overflow-hidden p-3 p-md-5 m-md-3">
+            <div class="container px-4 py-2">
+                <span class="intern-nav" id="transparency"></span>
+                <h2 id="transparency-title" class="pb-2 border-bottom text-center">Pricing Transparency</h2>
+                <div class="py-5">
+                    <p id="transparency-intro" class="text-center mb-4">Good, privacy-aware AI services are expensive to run. We keep pricing
+                        honest and explain where each euro goes.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="cost-card h-100">
+                                <p id="cost-1-label" class="cost-label">AI model tokens</p>
+                                <h3>45%</h3>
+                                <p id="cost-1-text">Speech-to-text, summarization, and translation model usage.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="cost-card h-100">
+                                <p id="cost-2-label" class="cost-label">Cloud infrastructure</p>
+                                <h3>25%</h3>
+                                <p id="cost-2-text">Hosting, storage, logs, monitoring, and reliability costs.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="cost-card h-100">
+                                <p id="cost-3-label" class="cost-label">Payment processing</p>
+                                <h3>15%</h3>
+                                <p id="cost-3-text">Stripe / SumUp transaction fees, charge handling, and payouts.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="cost-card h-100">
+                                <p id="cost-4-label" class="cost-label">Operations & GDPR</p>
+                                <h3>15%</h3>
+                                <p id="cost-4-text">Support, compliance work, legal documentation, and maintenance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transparency-note mt-4">
+                        <p id="transparency-note-1" class="mb-1"><strong>Example:</strong> A 0.99 EUR package is not pure margin. A significant
+                            part directly covers model, cloud, and payment costs.</p>
+                        <p id="transparency-note-2" class="mb-0">This cost split is an operational estimate and can vary by traffic, provider
+                            prices, and feature usage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell position-relative overflow-hidden p-3 p-md-5 m-md-3">
+            <div class="container px-4 py-2">
+                <span class="intern-nav" id="about-us"></span>
+                <h2 id="about-title" class="pb-2 border-bottom text-center">About</h2>
+                <div class="pt-5">
+                    <p id="about-text-1">Thinkerbell is a service by peterpan-communications, operated under Vinzenz Stampf IT Consulting.
+                    </p>
+                    <p id="about-text-2">Our goal is simple: make voice-first communication practical for everyday use while staying
+                        transparent about how AI services are priced and operated.</p>
+                </div>
+                <div class="pt-1">
+                    <h3 id="contact-title" class="pb-2">Contact</h3>
+                    <p id="contact-text">Questions about pricing, privacy, or data handling? Reach out via WhatsApp at <a
+                            href="https://wa.me/4915734815116">+49 1573 4815116</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container py-4 px-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                <p id="footer-copy" class="mb-0">peterpan-communications - a service by Vinzenz Stampf IT Consulting</p>
+                <div class="footer-links d-flex gap-3">
+                    <a id="footer-impressum" href="impressum.html">Impressum</a>
+                    <a id="footer-privacy" href="datenschutz.html">Datenschutz</a>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <script>
+        (() => {
+            const dictionary = {
+                en: {
+                    title: 'Thinkerbell | Voice Notes, Summaries, Translation',
+                    description: 'Thinkerbell helps you transcribe, summarize, and translate WhatsApp messages with transparent pricing and GDPR-conscious operations.',
+                    navFeatures: 'Key Features',
+                    navPricing: 'Pricing',
+                    navTransparency: 'Transparency',
+                    navAbout: 'About',
+                    navTry: 'Try now',
+                    heroEyebrow: 'A product by peterpan-communications',
+                    heroTitle: 'Your WhatsApp messages, finally usable.',
+                    heroSubtitle: 'Thinkerbell turns voice notes into text, summarizes long chats, and translates between languages. Built for speed, clarity, and transparent pricing.',
+                    btnStart: 'Start free',
+                    btnTransparency: 'See cost transparency',
+                    heroKicker: 'What you get',
+                    hero1: 'Fast voice transcription',
+                    hero2: 'Concise summaries',
+                    hero3: 'Multilingual translation',
+                    hero4: 'Credit-based micro pricing',
+                    featuresTitle: 'Key Features',
+                    feature1Title: 'Voice Note Transcription',
+                    feature1Text: 'Convert your voice messages into clear, readable text.',
+                    feature1Price: '0.01 EUR per minute',
+                    feature2Title: 'Message Summarization',
+                    feature2Text: 'Get the gist of long conversations with concise summaries.',
+                    feature2Price: '0.01 EUR per 1000 tokens',
+                    feature3Title: 'Translation',
+                    feature3Text: 'Bridge language gaps by translating messages between multiple languages.',
+                    feature3Price: '0.01 EUR per credit worth of usage',
+                    tryTitle: 'Try Now',
+                    tryText1: 'Test it out and get 5 credits for free:',
+                    tryText2: 'Send a voice or text message to this <a href="https://wa.me/4915734815116">contact</a>!',
+                    pricingTitle: 'Pricing',
+                    pricingSubtitle: '1 credit corresponds to 0.01 EUR of usage.',
+                    plan1Title: '10 credits',
+                    plan2Title: '30 credits',
+                    plan3Title: '100 credits',
+                    planPopular: 'Most popular',
+                    buy: 'Buy now',
+                    transparencyTitle: 'Pricing Transparency',
+                    transparencyIntro: 'Good, privacy-aware AI services are expensive to run. We keep pricing honest and explain where each euro goes.',
+                    cost1Label: 'AI model tokens',
+                    cost1Text: 'Speech-to-text, summarization, and translation model usage.',
+                    cost2Label: 'Cloud infrastructure',
+                    cost2Text: 'Hosting, storage, logs, monitoring, and reliability costs.',
+                    cost3Label: 'Payment processing',
+                    cost3Text: 'Stripe / SumUp transaction fees, charge handling, and payouts.',
+                    cost4Label: 'Operations & GDPR',
+                    cost4Text: 'Support, compliance work, legal documentation, and maintenance.',
+                    note1: '<strong>Example:</strong> A 0.99 EUR package is not pure margin. A significant part directly covers model, cloud, and payment costs.',
+                    note2: 'This cost split is an operational estimate and can vary by traffic, provider prices, and feature usage.',
+                    aboutTitle: 'About',
+                    aboutText1: 'Thinkerbell is a service by peterpan-communications, operated under Vinzenz Stampf IT Consulting.',
+                    aboutText2: 'Our goal is simple: make voice-first communication practical for everyday use while staying transparent about how AI services are priced and operated.',
+                    contactTitle: 'Contact',
+                    contactText: 'Questions about pricing, privacy, or data handling? See our <a href="impressum.html">Impressum</a>.',
+                    footerCopy: 'peterpan-communications - a service by Vinzenz Stampf IT Consulting',
+                    footerImpressum: 'Impressum',
+                    footerPrivacy: 'Datenschutz'
+                },
+                de: {
+                    title: 'Thinkerbell | Sprachnotizen, Zusammenfassungen, Uebersetzung',
+                    description: 'Thinkerbell hilft dir, WhatsApp-Nachrichten zu transkribieren, zusammenzufassen und zu uebersetzen - mit transparenter Preisgestaltung und DSGVO-bewusstem Betrieb.',
+                    navFeatures: 'Funktionen',
+                    navPricing: 'Preise',
+                    navTransparency: 'Transparenz',
+                    navAbout: 'Ueber uns',
+                    navTry: 'Jetzt testen',
+                    heroEyebrow: 'Ein Produkt von peterpan-communications',
+                    heroTitle: 'Deine WhatsApp-Nachrichten endlich wirklich nutzbar.',
+                    heroSubtitle: 'Thinkerbell wandelt Sprachnachrichten in Text um, fasst lange Chats zusammen und uebersetzt zwischen Sprachen. Schnell, klar und transparent bepreist.',
+                    btnStart: 'Kostenlos starten',
+                    btnTransparency: 'Kosten-Transparenz ansehen',
+                    heroKicker: 'Das bekommst du',
+                    hero1: 'Schnelle Transkription von Sprachnotizen',
+                    hero2: 'Praegnante Zusammenfassungen',
+                    hero3: 'Mehrsprachige Uebersetzungen',
+                    hero4: 'Kreditbasiertes Micropayment',
+                    featuresTitle: 'Funktionen',
+                    feature1Title: 'Sprachnotiz-Transkription',
+                    feature1Text: 'Wandle deine Sprachnachrichten in klar lesbaren Text um.',
+                    feature1Price: '0,01 EUR pro Minute',
+                    feature2Title: 'Nachrichten-Zusammenfassung',
+                    feature2Text: 'Erhalte die wichtigsten Punkte langer Unterhaltungen auf einen Blick.',
+                    feature2Price: '0,01 EUR pro 1000 Token',
+                    feature3Title: 'Uebersetzung',
+                    feature3Text: 'Ueberbruecke Sprachbarrieren mit Uebersetzungen in mehrere Sprachen.',
+                    feature3Price: '0,01 EUR pro Nutzungs-Kredit',
+                    tryTitle: 'Jetzt testen',
+                    tryText1: 'Teste Thinkerbell und erhalte 5 Credits kostenlos:',
+                    tryText2: 'Sende eine Sprach- oder Textnachricht an diesen <a href="https://wa.me/4915734815116">Kontakt</a>!',
+                    pricingTitle: 'Preise',
+                    pricingSubtitle: '1 Credit entspricht 0,01 EUR Nutzung.',
+                    plan1Title: '10 Credits',
+                    plan2Title: '30 Credits',
+                    plan3Title: '100 Credits',
+                    planPopular: 'Beliebt',
+                    buy: 'Jetzt kaufen',
+                    transparencyTitle: 'Preis-Transparenz',
+                    transparencyIntro: 'Gute, datenschutzbewusste KI-Services sind teuer im Betrieb. Wir zeigen transparent, wohin jeder Euro fliesst.',
+                    cost1Label: 'KI-Tokenkosten',
+                    cost1Text: 'Modellnutzung fuer Speech-to-Text, Zusammenfassung und Uebersetzung.',
+                    cost2Label: 'Cloud-Infrastruktur',
+                    cost2Text: 'Hosting, Speicher, Logs, Monitoring und Zuverlaessigkeit.',
+                    cost3Label: 'Zahlungsabwicklung',
+                    cost3Text: 'Stripe-/SumUp-Gebuehren, Transaktionsabwicklung und Auszahlungen.',
+                    cost4Label: 'Betrieb & DSGVO',
+                    cost4Text: 'Support, Compliance-Aufwand, Rechtstexte und Wartung.',
+                    note1: '<strong>Beispiel:</strong> Ein Paket fuer 0,99 EUR ist keine reine Marge. Ein relevanter Anteil deckt direkt Modell-, Cloud- und Zahlungsgebuehren.',
+                    note2: 'Diese Aufteilung ist ein Betriebswert und kann je nach Traffic, Providerpreisen und Nutzung variieren.',
+                    aboutTitle: 'Ueber uns',
+                    aboutText1: 'Thinkerbell ist ein Service von peterpan-communications, betrieben von Vinzenz Stampf IT Consulting.',
+                    aboutText2: 'Unser Ziel: Voice-Kommunikation alltagstauglich machen und gleichzeitig transparent erklaeren, wie KI-Services bepreist werden.',
+                    contactTitle: 'Kontakt',
+                    contactText: 'Fragen zu Preisen, Datenschutz oder Datenverarbeitung? Siehe unser <a href="impressum.html">Impressum</a>.',
+                    footerCopy: 'peterpan-communications - ein Service von Vinzenz Stampf IT Consulting',
+                    footerImpressum: 'Impressum',
+                    footerPrivacy: 'Datenschutz'
+                },
+                es: {
+                    title: 'Thinkerbell | Notas de voz, resumenes y traduccion',
+                    description: 'Thinkerbell te ayuda a transcribir, resumir y traducir mensajes de WhatsApp con precios transparentes y operacion orientada al RGPD.',
+                    navFeatures: 'Funciones',
+                    navPricing: 'Precios',
+                    navTransparency: 'Transparencia',
+                    navAbout: 'Acerca de',
+                    navTry: 'Probar ahora',
+                    heroEyebrow: 'Un producto de peterpan-communications',
+                    heroTitle: 'Tus mensajes de WhatsApp, por fin utiles.',
+                    heroSubtitle: 'Thinkerbell convierte notas de voz en texto, resume chats largos y traduce entre idiomas. Rapido, claro y con precios transparentes.',
+                    btnStart: 'Empezar gratis',
+                    btnTransparency: 'Ver transparencia de costos',
+                    heroKicker: 'Lo que obtienes',
+                    hero1: 'Transcripcion rapida de voz',
+                    hero2: 'Resumenes concisos',
+                    hero3: 'Traduccion multilingue',
+                    hero4: 'Microprecios por creditos',
+                    featuresTitle: 'Funciones',
+                    feature1Title: 'Transcripcion de notas de voz',
+                    feature1Text: 'Convierte tus mensajes de voz en texto claro y legible.',
+                    feature1Price: '0,01 EUR por minuto',
+                    feature2Title: 'Resumen de mensajes',
+                    feature2Text: 'Obtiene lo esencial de conversaciones largas en segundos.',
+                    feature2Price: '0,01 EUR por 1000 tokens',
+                    feature3Title: 'Traduccion',
+                    feature3Text: 'Supera barreras de idioma con traduccion entre varios idiomas.',
+                    feature3Price: '0,01 EUR por credito de uso',
+                    tryTitle: 'Probar ahora',
+                    tryText1: 'Pruebalo y recibe 5 creditos gratis:',
+                    tryText2: 'Envia un mensaje de voz o texto a este <a href="https://wa.me/4915734815116">contacto</a>!',
+                    pricingTitle: 'Precios',
+                    pricingSubtitle: '1 credito equivale a 0,01 EUR de uso.',
+                    plan1Title: '10 creditos',
+                    plan2Title: '30 creditos',
+                    plan3Title: '100 creditos',
+                    planPopular: 'Mas elegido',
+                    buy: 'Comprar ahora',
+                    transparencyTitle: 'Transparencia de precios',
+                    transparencyIntro: 'Los servicios de IA de calidad y con enfoque en privacidad son caros de operar. Mostramos claramente a donde va cada euro.',
+                    cost1Label: 'Coste de tokens IA',
+                    cost1Text: 'Uso de modelos para voz a texto, resumen y traduccion.',
+                    cost2Label: 'Infraestructura cloud',
+                    cost2Text: 'Hosting, almacenamiento, logs, monitoreo y confiabilidad.',
+                    cost3Label: 'Procesamiento de pagos',
+                    cost3Text: 'Comisiones de Stripe/SumUp, gestion de cobros y pagos.',
+                    cost4Label: 'Operacion y RGPD',
+                    cost4Text: 'Soporte, cumplimiento, documentacion legal y mantenimiento.',
+                    note1: '<strong>Ejemplo:</strong> Un paquete de 0,99 EUR no es margen puro. Una parte importante cubre costes de modelo, cloud y pagos.',
+                    note2: 'Esta distribucion es una estimacion operativa y puede variar segun trafico, precios de proveedores y uso de funciones.',
+                    aboutTitle: 'Acerca de',
+                    aboutText1: 'Thinkerbell es un servicio de peterpan-communications, operado por Vinzenz Stampf IT Consulting.',
+                    aboutText2: 'Nuestro objetivo es simple: hacer practico el uso de mensajes de voz y mantener total transparencia en precios de IA.',
+                    contactTitle: 'Contacto',
+                    contactText: 'Preguntas sobre precios, privacidad o tratamiento de datos? Consulta nuestro <a href="impressum.html">aviso legal</a>.',
+                    footerCopy: 'peterpan-communications - un servicio de Vinzenz Stampf IT Consulting',
+                    footerImpressum: 'Aviso legal',
+                    footerPrivacy: 'Privacidad'
+                },
+                fr: {
+                    title: 'Thinkerbell | Notes vocales, resumes et traduction',
+                    description: 'Thinkerbell vous aide a transcrire, resumer et traduire des messages WhatsApp avec des prix transparents et une operation respectueuse du RGPD.',
+                    navFeatures: 'Fonctionnalites',
+                    navPricing: 'Tarifs',
+                    navTransparency: 'Transparence',
+                    navAbout: 'A propos',
+                    navTry: 'Essayer',
+                    heroEyebrow: 'Un produit de peterpan-communications',
+                    heroTitle: 'Vos messages WhatsApp enfin exploitables.',
+                    heroSubtitle: 'Thinkerbell transforme les notes vocales en texte, resume les longues conversations et traduit entre langues. Rapide, clair et transparent sur les prix.',
+                    btnStart: 'Commencer gratuitement',
+                    btnTransparency: 'Voir la transparence des couts',
+                    heroKicker: 'Ce que vous obtenez',
+                    hero1: 'Transcription vocale rapide',
+                    hero2: 'Resumes concis',
+                    hero3: 'Traduction multilingue',
+                    hero4: 'Micropaiement par credits',
+                    featuresTitle: 'Fonctionnalites',
+                    feature1Title: 'Transcription de notes vocales',
+                    feature1Text: 'Convertissez vos messages vocaux en texte clair et lisible.',
+                    feature1Price: '0,01 EUR par minute',
+                    feature2Title: 'Resume de messages',
+                    feature2Text: 'Obtenez l essentiel des longues conversations en quelques secondes.',
+                    feature2Price: '0,01 EUR par 1000 tokens',
+                    feature3Title: 'Traduction',
+                    feature3Text: 'Depassez les barrieres linguistiques grace a la traduction multilingue.',
+                    feature3Price: '0,01 EUR par credit d usage',
+                    tryTitle: 'Essayer',
+                    tryText1: 'Testez le service et obtenez 5 credits gratuits :',
+                    tryText2: 'Envoyez un message vocal ou texte a ce <a href="https://wa.me/4915734815116">contact</a> !',
+                    pricingTitle: 'Tarifs',
+                    pricingSubtitle: '1 credit correspond a 0,01 EUR d usage.',
+                    plan1Title: '10 credits',
+                    plan2Title: '30 credits',
+                    plan3Title: '100 credits',
+                    planPopular: 'Le plus choisi',
+                    buy: 'Acheter',
+                    transparencyTitle: 'Transparence tarifaire',
+                    transparencyIntro: 'Les services IA de qualite, respectueux de la vie privee, coutent cher a exploiter. Nous expliquons clairement ou va chaque euro.',
+                    cost1Label: 'Couts des tokens IA',
+                    cost1Text: 'Usage des modeles pour voix-texte, resume et traduction.',
+                    cost2Label: 'Infrastructure cloud',
+                    cost2Text: 'Hebergement, stockage, logs, monitoring et fiabilite.',
+                    cost3Label: 'Traitement des paiements',
+                    cost3Text: 'Frais Stripe/SumUp, gestion des transactions et versements.',
+                    cost4Label: 'Operations & RGPD',
+                    cost4Text: 'Support, conformite, documentation legale et maintenance.',
+                    note1: '<strong>Exemple :</strong> Un pack a 0,99 EUR n est pas une marge pure. Une partie importante couvre directement les couts modele, cloud et paiement.',
+                    note2: 'Cette repartition est une estimation operationnelle et peut varier selon le trafic, les tarifs fournisseurs et l usage des fonctions.',
+                    aboutTitle: 'A propos',
+                    aboutText1: 'Thinkerbell est un service de peterpan-communications, exploite par Vinzenz Stampf IT Consulting.',
+                    aboutText2: 'Notre objectif est simple : rendre la communication vocale pratique au quotidien avec une transparence totale sur les couts IA.',
+                    contactTitle: 'Contact',
+                    contactText: 'Des questions sur les tarifs, la vie privee ou les donnees ? Consultez nos <a href="impressum.html">mentions legales</a>.',
+                    footerCopy: 'peterpan-communications - un service de Vinzenz Stampf IT Consulting',
+                    footerImpressum: 'Mentions legales',
+                    footerPrivacy: 'Confidentialite'
+                }
+            };
+
+            const refs = {
+                metaDescription: document.querySelector('meta[name="description"]'),
+                navFeatures: document.querySelector('a[href="#key-features"]'),
+                navPricing: document.querySelector('a[href="#pricing"]'),
+                navTransparency: document.querySelector('a[href="#transparency"]'),
+                navAbout: document.querySelector('a[href="#about-us"]'),
+                navTry: document.getElementById('nav-try'),
+                heroEyebrow: document.getElementById('hero-eyebrow'),
+                heroTitle: document.getElementById('hero-title'),
+                heroSubtitle: document.getElementById('hero-subtitle'),
+                btnStart: document.getElementById('btn-start'),
+                btnTransparency: document.getElementById('btn-transparency'),
+                heroKicker: document.getElementById('hero-kicker'),
+                hero1: document.getElementById('hero-li-1'),
+                hero2: document.getElementById('hero-li-2'),
+                hero3: document.getElementById('hero-li-3'),
+                hero4: document.getElementById('hero-li-4'),
+                featuresTitle: document.getElementById('features-title'),
+                feature1Title: document.getElementById('feature-1-title'),
+                feature1Text: document.getElementById('feature-1-text'),
+                feature1Price: document.getElementById('feature-1-price'),
+                feature2Title: document.getElementById('feature-2-title'),
+                feature2Text: document.getElementById('feature-2-text'),
+                feature2Price: document.getElementById('feature-2-price'),
+                feature3Title: document.getElementById('feature-3-title'),
+                feature3Text: document.getElementById('feature-3-text'),
+                feature3Price: document.getElementById('feature-3-price'),
+                tryTitle: document.getElementById('try-title'),
+                tryText1: document.getElementById('try-text-1'),
+                tryText2: document.getElementById('try-text-2'),
+                pricingTitle: document.getElementById('pricing-title'),
+                pricingSubtitle: document.getElementById('pricing-subtitle'),
+                plan1Title: document.getElementById('plan-1-title'),
+                plan2Title: document.getElementById('plan-2-title'),
+                plan3Title: document.getElementById('plan-3-title'),
+                planPopular: document.getElementById('plan-popular'),
+                buy1: document.getElementById('buy-1'),
+                buy2: document.getElementById('buy-2'),
+                buy3: document.getElementById('buy-3'),
+                transparencyTitle: document.getElementById('transparency-title'),
+                transparencyIntro: document.getElementById('transparency-intro'),
+                cost1Label: document.getElementById('cost-1-label'),
+                cost1Text: document.getElementById('cost-1-text'),
+                cost2Label: document.getElementById('cost-2-label'),
+                cost2Text: document.getElementById('cost-2-text'),
+                cost3Label: document.getElementById('cost-3-label'),
+                cost3Text: document.getElementById('cost-3-text'),
+                cost4Label: document.getElementById('cost-4-label'),
+                cost4Text: document.getElementById('cost-4-text'),
+                note1: document.getElementById('transparency-note-1'),
+                note2: document.getElementById('transparency-note-2'),
+                aboutTitle: document.getElementById('about-title'),
+                aboutText1: document.getElementById('about-text-1'),
+                aboutText2: document.getElementById('about-text-2'),
+                contactTitle: document.getElementById('contact-title'),
+                contactText: document.getElementById('contact-text'),
+                footerCopy: document.getElementById('footer-copy'),
+                footerImpressum: document.getElementById('footer-impressum'),
+                footerPrivacy: document.getElementById('footer-privacy')
+            };
+
+            const applyLanguage = (lang) => {
+                const t = dictionary[lang] || dictionary.en;
+                document.title = t.title;
+                refs.metaDescription.setAttribute('content', t.description);
+
+                Object.keys(refs).forEach((key) => {
+                    if (key === 'metaDescription') {
+                        return;
+                    }
+                    const el = refs[key];
+                    if (!el || !t[key]) {
+                        return;
+                    }
+                    if (key === 'tryText2' || key === 'note1' || key === 'contactText') {
+                        el.innerHTML = t[key];
+                    } else {
+                        el.textContent = t[key];
+                    }
+                });
+
+                const switchRoot = document.querySelector('[data-lang-switch-main]');
+                if (switchRoot) {
+                    switchRoot.querySelectorAll('[data-lang]').forEach((btn) => {
+                        btn.classList.toggle('is-active', btn.dataset.lang === lang);
+                    });
+                }
+                localStorage.setItem('siteLang', lang);
+            };
+
+            const switchRoot = document.querySelector('[data-lang-switch-main]');
+            if (switchRoot) {
+                switchRoot.querySelectorAll('[data-lang]').forEach((btn) => {
+                    btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+                });
+            }
+
+            const savedLang = localStorage.getItem('siteLang') || 'en';
+            applyLanguage(savedLang);
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
